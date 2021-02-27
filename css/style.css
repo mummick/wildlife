@@ -126,11 +126,17 @@ body {
   margin-right: 0;
 }
 
-.upper_nav_item:hover a,
-.upper_nav_item:focus a {
-  border: 0px solid #e39128;
+.upper_nav_item:hover:not(:last-child) a,
+.upper_nav_item:focus:not(:last-child) a {
+  border: 0px solid;
   border-radius: 5px;
-  background-color: #e39128;
+  background-color: #cd6326;
+}
+
+.upper_nav_item:active:not(:last-child) a {
+  border: 0px solid;
+  border-radius: 5px;
+  background-color: #8f5613;
 }
 
 .sign_in {
@@ -140,15 +146,20 @@ body {
 
 .sign_in:hover,
 .sign_in:focus {
-  border: 2px solid #e39128;
+  border: 2px solid #cd6326;
   border-radius: 5px;
-  background-color: #e39128;
+  background-color: #cd6326;
+}
+
+nav .upper_nav .sign_in:active {
+  border: 2px solid #8f5613;
+  border-radius: 5px;
+  background-color: #8f5613;
 }
 
 .survival_h2 {
   font-size: 48px;
   letter-spacing: 2px;
-  /* text-align: left; */
   color: #cd6326;
   font-weight: 400;
   margin-bottom: 53px;
@@ -190,9 +201,12 @@ body {
 
 /* top section end */
 
+/* medium section end */
 .medium_block {
   background-color: #ccc;
 }
+
+/* medium section end */
 
 .bottom_block {
   background-color: #181617;
