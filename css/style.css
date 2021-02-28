@@ -100,7 +100,7 @@ body {
   display: block;
   margin-right: 17px;
   padding: 0 22px;
-  line-height: 48px;
+  line-height: 46px;
   text-decoration: none;
   color: #f7f7f7;
 }
@@ -123,10 +123,12 @@ body {
   margin: auto;
 }
 
-.upper_nav_item:last-child a {
+.header .upper_nav_item:last-child a {
   margin-right: 0;
 }
 
+.social_items a:hover,
+.social_items a:focus,
 .upper_nav_item:hover:not(:last-child) a,
 .upper_nav_item:focus:not(:last-child) a {
   border: 0px solid;
@@ -134,6 +136,7 @@ body {
   background-color: #cd6326;
 }
 
+.social_items a:active,
 .upper_nav_item:active:not(:last-child) a {
   border: 0px solid;
   border-radius: 5px;
@@ -163,12 +166,12 @@ nav .upper_nav .sign_in:active {
   letter-spacing: 2px;
   color: #cd6326;
   font-weight: 400;
-  margin-bottom: 53px;
+  margin-bottom: 54px;
 }
 
 .survival p {
   width: 275px;
-  line-height: 28px;
+  line-height: 27px;
   font-size: 18px;
   font-weight: 400;
 }
@@ -224,14 +227,14 @@ nav .upper_nav .sign_in:active {
   font-size: 24px;
   text-align: center;
   color: #666666;
-  margin-bottom: 124px;
+  margin-bottom: 123px;
 }
 
 .slider {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 240px;
+  margin-bottom: 241px;
 }
 
 .slider a {
@@ -324,6 +327,7 @@ form {
   font-size: 23px;
   line-height: 60px;
   outline: none;
+  margin-bottom: 238px;
 }
 
 .email {
@@ -356,6 +360,72 @@ form {
 
 /* medium section end */
 
+/* bottom section start */
 .bottom_block {
   background-color: #181617;
 }
+.bottom_section {
+  min-height: 359px;
+  background-image: url(../img/footer.jpg);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  padding: 135px 120px 0 120px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.articles {
+  margin-right: 27px;
+}
+
+.about_us {
+  margin-right: 28px;
+}
+
+.learn_more {
+  margin-right: 74px;
+}
+
+.social_items {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social_items a {
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0 13px 0 13px;
+}
+
+.social_items li:last-child a {
+  margin-right: 0;
+}
+
+.facebook a {
+  background-image: url('../img/facebook_icon.svg');
+}
+
+.instagram a {
+  background-image: url('../img/instagram_icon.svg');
+}
+
+.pinterest a {
+  background-image: url('../img/pinterest_icon.svg');
+}
+
+.telegram a {
+  background-image: url('../img/tg_icon.svg');
+}
+
+/* bottom section end */
